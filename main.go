@@ -10,7 +10,7 @@ import (
 
 func main() {
 	start_seed := "https://www.theonion.com/breaking-news/news-in-brief?startIndex="
-    start_page := 0 // e.g. start_page=0&end_page=0 => 0(20)
+	start_page := 0 // e.g. start_page=0&end_page=0 => 0(20)
 	end_page := 6840 // e.g. start_page=0&end_page=40 => 0(20)+20(20)+40(20)
 
 	links,err := fetcher.GetAllPagesLinks(start_seed,start_page,end_page)
